@@ -13,24 +13,26 @@ function validate(number){
       }
     }
   
-  function changeForm(param){
+  function changeForm(number){
     var divList = document.getElementsByClassName('forms');
-    if(param==0){
+    if(number==0){
       divList[0].classList.add('form-style');
       divList[0].classList.remove('hidden');
+
       divList[1].classList.remove('form-style');
       divList[1].classList.add('hidden');
 
     }
-    else if(param==1){
+    else if(number==1){
       divList[1].classList.add('form-style');
       divList[1].classList.remove('hidden');
+
       divList[0].classList.remove('form-style');
       divList[0].classList.add('hidden');
-
     }
   }
-  for(var i=0; i<elementList.length; i++){
+  let elementList = document.querySelectorAll("input");
+  for(var i=0; i< elementList.length; i++){
     elementList[i].addEventListener('keyup',function(event){
       event.preventDefault();
     loginObj={
@@ -58,3 +60,4 @@ function validate(number){
    username: "",
    password:""
  }
+
