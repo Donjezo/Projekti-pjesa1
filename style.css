@@ -331,7 +331,7 @@ button:hover::after{
     height: auto;
   }
   
-  #submit {
+  #submit1, #submit2{
     width: 20%;
     left: 40%;
     background-color: #5a1e16f1;

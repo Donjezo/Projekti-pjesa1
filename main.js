@@ -32,7 +32,7 @@ function validate(number){
     }
   }
   let elementList = document.querySelectorAll("input");
-  for(var i=0; i< elementList.length; i++){
+  for(var i=0; i < elementList.length; i++){
     elementList[i].addEventListener('keyup',function(event){
       event.preventDefault();
     loginObj={
